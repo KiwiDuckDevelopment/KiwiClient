@@ -11,7 +11,7 @@ For instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tut
 
 ## Info
 
-Fabric Utility Mod.
+Fabric Utility Mod, compatible with Aristois Client.
 
 "_First I quacc, then I hacc._"
 

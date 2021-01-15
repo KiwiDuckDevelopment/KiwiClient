@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "kiwiclient",
-  "version": "1.7.20",
+  "version": "Ari1.8.20",
 
   "name": "KiwiClient",
-  "description": "Experimental MC Utility Mod",
+  "description": "Experimental MC Utility Mod for Aristois",
   "authors": [
     "TangyKiwi",
     "nzeng8 (Nicholas Zeng)",

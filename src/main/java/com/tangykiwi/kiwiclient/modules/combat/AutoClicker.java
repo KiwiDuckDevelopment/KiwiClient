@@ -12,7 +12,7 @@ import org.lwjgl.glfw.GLFW;
 
 public class AutoClicker extends Module {
     public AutoClicker() {
-        super("Autoclicker", "Clicks really fast", GLFW.GLFW_KEY_J, Category.COMBAT);
+        super("Autoclicker", "Clicks really fast", KEY_UNBOUND, Category.COMBAT);
     }
 
 

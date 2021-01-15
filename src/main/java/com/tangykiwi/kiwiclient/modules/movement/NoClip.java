@@ -14,7 +14,7 @@ import org.lwjgl.glfw.GLFW;
 public class NoClip extends Module {
 
     public NoClip() {
-        super("NoClip", "Clip through blocks", GLFW.GLFW_KEY_N, Category.MOVEMENT);
+        super("NoClip", "Clip through blocks", KEY_UNBOUND, Category.MOVEMENT);
     }
 
     @Subscribe

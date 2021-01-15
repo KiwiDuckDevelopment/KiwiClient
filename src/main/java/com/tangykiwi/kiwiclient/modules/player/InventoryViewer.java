@@ -13,6 +13,7 @@ import net.minecraft.item.ItemStack;
 public class InventoryViewer extends Module {
     public InventoryViewer() {
         super("InventoryViewer", "Allows you to see what's in your inventory", KEY_UNBOUND, Category.PLAYER);
+        super.toggle();
     }
 
     @Subscribe

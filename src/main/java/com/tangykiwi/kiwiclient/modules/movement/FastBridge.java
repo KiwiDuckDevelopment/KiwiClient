@@ -11,7 +11,7 @@ import org.lwjgl.glfw.GLFW;
 public class FastBridge extends Module {
 
     public FastBridge() {
-        super("FastBridge", "Autosneaks at block edge.", GLFW.GLFW_KEY_G, Category.MOVEMENT);
+        super("FastBridge", "Autosneaks at block edge.", KEY_UNBOUND, Category.MOVEMENT);
     }
 
     @Subscribe

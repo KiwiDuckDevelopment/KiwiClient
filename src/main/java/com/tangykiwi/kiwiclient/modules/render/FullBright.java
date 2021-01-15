@@ -10,7 +10,7 @@ import org.lwjgl.glfw.GLFW;
 public class FullBright extends Module {
 
     public FullBright() {
-        super("FullBright", "Increase gamma", GLFW.GLFW_KEY_C, Category.RENDER);
+        super("FullBright", "Increase gamma", KEY_UNBOUND, Category.RENDER);
     }
 
     @Subscribe

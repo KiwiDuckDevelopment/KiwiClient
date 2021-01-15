@@ -20,7 +20,7 @@ import java.util.List;
 
 public class Fly extends Module {
     public Fly() {
-        super("Fly", "Fly like in Creative", GLFW.GLFW_KEY_Z, Category.MOVEMENT,
+        super("Fly", "Fly like in Creative", KEY_UNBOUND, Category.MOVEMENT,
             new SliderSetting("Speed", 0, 5, 1, 1));
     }
 

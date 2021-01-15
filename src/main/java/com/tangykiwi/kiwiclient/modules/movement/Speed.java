@@ -10,7 +10,7 @@ import org.lwjgl.glfw.GLFW;
 public class Speed extends Module {
 
     public Speed() {
-        super("Speed", "Go fast", GLFW.GLFW_KEY_GRAVE_ACCENT, Category.MOVEMENT);
+        super("Speed", "Go fast", KEY_UNBOUND, Category.MOVEMENT);
     }
 
     @Subscribe

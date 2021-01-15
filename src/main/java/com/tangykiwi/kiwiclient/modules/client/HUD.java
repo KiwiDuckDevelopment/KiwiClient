@@ -40,16 +40,17 @@ public class HUD extends Module {
     public List<String> info = new ArrayList<>();
     
     public HUD() {
-        super("HUD", "Shows info as an overlay", GLFW.GLFW_KEY_H, Category.CLIENT,
+        super("HUD", "Shows info as an overlay", KEY_UNBOUND, Category.CLIENT,
             new ToggleSetting("FPS", true).withDesc("Shows FPS").withValue(0),
             new ToggleSetting("Ping", true).withDesc("Shows Ping").withValue(1),
-            new ToggleSetting("IP", true).withDesc("Shows Server Address").withValue(2),
-            new ToggleSetting("BPS", true).withDesc("Shows Player Speed").withValue(3),
+            new ToggleSetting("IP", false).withDesc("Shows Server Address").withValue(2),
+            new ToggleSetting("BPS", false).withDesc("Shows Player Speed").withValue(3),
             new ToggleSetting("Coords", true).withDesc("Shows Player Position").withValue(4),
             new ToggleSetting("Alternate Coords", true).withDesc("Shows Nether/Overworld Position").withValue(5),
             new ToggleSetting("Armor", true).withDesc("Shows Armor Status")
             //new ToggleSetting("Watermark", true).withDesc("KiwiClient Watermark")
         );
+        super.toggle();
     }
     
     @Subscribe
@@ -57,10 +58,12 @@ public class HUD extends Module {
         if(!mc.options.debugEnabled) {
             TextRenderer textRenderer = mc.textRenderer;
 
-            List<Settings> settings = getToggledSettings();
+            List<Settings> settings = getSettings();
+            int counter = 0;
             for(int i = 5; i >= 0; i--) {
                 if(settings.get(i).asToggle().state) {
-                    drawSetting(textRenderer, e.matrix, settings.get(i).asToggle().getValue(), (5 - i) * 10);
+                    counter++;
+                    drawSetting(textRenderer, e.matrix, settings.get(i).asToggle().getValue(), (counter) * 10);
                 }
             }
 

@@ -24,7 +24,7 @@ public class Freecam extends Module {
     private Entity riding;
 
     public Freecam() {
-        super("Freecam", "Detaches your camera.", GLFW.GLFW_KEY_U, Category.PLAYER,
+        super("Freecam", "Detaches your camera.", KEY_UNBOUND, Category.PLAYER,
                 new SliderSetting("Speed", 0, 3, 0.5, 2));
     }
 

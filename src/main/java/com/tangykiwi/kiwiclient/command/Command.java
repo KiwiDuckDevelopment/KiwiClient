@@ -5,8 +5,8 @@ import org.lwjgl.glfw.GLFW;
 
 public abstract class Command {
 
-    public static String PREFIX = ".";
-    public static int KEY = GLFW.GLFW_KEY_PERIOD;
+    public static String PREFIX = ",";
+    public static int KEY = GLFW.GLFW_KEY_COMMA;
 
     protected MinecraftClient mc = MinecraftClient.getInstance();
 

@@ -7,6 +7,6 @@ import org.lwjgl.glfw.GLFW;
 public class XRay extends Module {
 
     public XRay() {
-        super("XRay", "Shows ores", GLFW.GLFW_KEY_C, Category.RENDER);
+        super("XRay", "Shows ores", KEY_UNBOUND, Category.RENDER);
     }
 }
