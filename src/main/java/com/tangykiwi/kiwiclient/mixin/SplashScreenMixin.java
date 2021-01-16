@@ -18,9 +18,9 @@ public class SplashScreenMixin {
     @Final
     private static Identifier LOGO;
 
-    @Inject(method = "init(Lnet/minecraft/client/MinecraftClient;)V", at = @At("HEAD"), cancellable=true)
+    @Inject(method = "init(Lnet/minecraft/client/MinecraftClient;)V", at = @At("TAIL"), cancellable=true)
     private static void init(MinecraftClient client, CallbackInfo ci) {
         client.getTextureManager().registerTexture(LOGO, new LoadingScreen(LOGO));
-        ci.cancel();
+        //ci.cancel();
     }
 }

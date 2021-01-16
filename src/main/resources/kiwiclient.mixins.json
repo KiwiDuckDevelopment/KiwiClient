@@ -19,7 +19,6 @@
     "KeyboardMixin",
     "MinecraftClientMixin",
     "PlayerEntityRendererMixin",
-    "PlayerListEntryMixin",
     "SplashScreenMixin",
     "TitleScreenMixin"
   ],
