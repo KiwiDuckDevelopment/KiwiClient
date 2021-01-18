@@ -10,5 +10,6 @@ import net.minecraft.client.render.entity.LivingEntityRenderer;
 public class Deadmau5Ears extends Module {
     public Deadmau5Ears() {
         super("Deadmau5Ears", "Gives you ears like Deadmau5", KEY_UNBOUND, Category.PLAYER);
+        super.toggle();
     }
 }
