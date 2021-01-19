@@ -53,9 +53,10 @@ public class ClickGuiScreen extends AbstractWindowScreen {
         i += len + 5;
         windows.add(new ModuleWindow(KiwiClient.moduleManager.getModulesInCat(Category.MOVEMENT), i, 35, len,
             StringUtils.capitalize(StringUtils.lowerCase(Category.MOVEMENT.toString())), new ItemStack(Items.DIAMOND_BOOTS)));
-        i = 10;
-        int y = 45 + ((ModuleWindow) windows.get(0)).getHeight();
-        windows.add(new ModuleWindow(KiwiClient.moduleManager.getModulesInCat(Category.CLIENT), i, y + 5, len,
+        i += len + 5;
+        //i = 10;
+        //int y = 45 + ((ModuleWindow) windows.get(0)).getHeight();
+        windows.add(new ModuleWindow(KiwiClient.moduleManager.getModulesInCat(Category.CLIENT), i, 35, len,
             StringUtils.capitalize(StringUtils.lowerCase(Category.CLIENT.toString())), new ItemStack(Items.GLASS_PANE)));
     }
 

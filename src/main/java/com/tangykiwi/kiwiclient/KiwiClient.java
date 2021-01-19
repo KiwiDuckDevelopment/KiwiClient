@@ -32,6 +32,8 @@ public class KiwiClient implements ModInitializer {
     public static EventBus eventBus = new EventBus();
 
     public static Identifier POTION_BOTTLES = new Identifier("kiwiclient:textures/brewing_stand.png");
+    public static Identifier CAPE = new Identifier("kiwiclient:textures/cape.png");
+    public static Identifier EARS = new Identifier("kiwiclient:textures/ears.png");
 
     @Override
     public void onInitialize() {
