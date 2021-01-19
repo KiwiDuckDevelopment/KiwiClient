@@ -37,6 +37,7 @@ Fabric Utility Mod, compatible with Aristois Client.
 - Speed ( ~ , currently does NOT work)
 
 #### Player
+- Cape (no bind)
 - Deadmau5Ears (no bind)
 - Freecam ( u )
 - InventoryViewer (no bind)
@@ -46,13 +47,13 @@ Fabric Utility Mod, compatible with Aristois Client.
 - Fullbright ( c )
 
 ### Commands
-- .bind [module] [key]
+- ,bind [module] [key]
 - .d
-- .ez
-- .say [message]
-- .schwongleclip / .vclip [blocks]  
-- .toggle / .t [module]
-- .unbind [module]
+- ,ez
+- ,say [message]
+- ,schwongleclip / ,vclip [blocks]  
+- ,toggle / ,t [module]
+- ,unbind [module]
 
 ### TODO
 - Fix Speed

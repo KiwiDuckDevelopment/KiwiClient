@@ -9,7 +9,6 @@
     "AbstractBlockStateMixin",
     "BookUpdateC2SPacketMixin",
     "BrewingStandBlockEntityMixin",
-    "CapeFeatureRendererMixin",
     "ChunkOcclusionDataBuilderMixin",
     "ClientConnectionMixin",
     "ClientPlayerEntityMixin",
