@@ -24,7 +24,7 @@ import net.minecraft.util.math.BlockPos;
 public class KiwiClient implements ModInitializer {
 
     public static final String MOD_ID = "kiwiclient";
-    public static String name = "KiwiClient", version = "Ari1.9.22";
+    public static String name = "KiwiClient", version = "Ari1.9.23";
 
     public static ModuleManager moduleManager;
     public static CommandManager commandManager;

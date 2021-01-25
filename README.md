@@ -45,6 +45,8 @@ Fabric Utility Mod, compatible with Aristois Client.
 #### Render
 - BetterBrewingStands (no bind)
 - Fullbright ( c )
+- VanillaTweaks (currently built-in)
+- ItemPhysics (no bind)
 
 ### Commands
 - ,bind [module] [key]
