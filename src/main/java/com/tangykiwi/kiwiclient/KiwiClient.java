@@ -7,7 +7,9 @@ import com.tangykiwi.kiwiclient.gui.BrewingStandBlockEntityRenderer;
 import com.tangykiwi.kiwiclient.modules.ModuleManager;
 import com.tangykiwi.kiwiclient.modules.render.BetterBrewingStands;
 import com.tangykiwi.kiwiclient.modules.client.ClickGui;
+import com.tangykiwi.kiwiclient.util.CustomMatrix;
 import com.tangykiwi.kiwiclient.util.DiscordRP;
+import com.tangykiwi.kiwiclient.util.Utils;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.rendereregistry.v1.BlockEntityRendererRegistry;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
@@ -16,6 +18,7 @@ import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.block.entity.BrewingStandBlockEntity;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DefaultedList;
@@ -24,7 +27,8 @@ import net.minecraft.util.math.BlockPos;
 public class KiwiClient implements ModInitializer {
 
     public static final String MOD_ID = "kiwiclient";
-    public static String name = "KiwiClient", version = "Ari1.9.24";
+    public static String name = "KiwiClient", version = "Ari1.10.24";
+    private MinecraftClient mc;
 
     public static ModuleManager moduleManager;
     public static CommandManager commandManager;
@@ -37,6 +41,10 @@ public class KiwiClient implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        mc = MinecraftClient.getInstance();
+        Utils.mc = mc;
+        CustomMatrix.begin(new MatrixStack());
+
         moduleManager = new ModuleManager();
         moduleManager.init();
 

@@ -47,6 +47,7 @@ Fabric Utility Mod, compatible with Aristois Client.
 - Fullbright ( c )
 - VanillaTweaks (currently built-in)
 - ItemPhysics (no bind)
+- LogoutSpots (no bind)
 
 ### Commands
 - ,bind [module] [key]
