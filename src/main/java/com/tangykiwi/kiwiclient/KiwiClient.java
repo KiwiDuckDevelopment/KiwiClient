@@ -11,6 +11,7 @@ import com.tangykiwi.kiwiclient.util.CustomMatrix;
 import com.tangykiwi.kiwiclient.util.DiscordRP;
 import com.tangykiwi.kiwiclient.util.Utils;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.fabricmc.fabric.api.client.rendereregistry.v1.BlockEntityRendererRegistry;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.impl.networking.ClientSidePacketRegistryImpl;
@@ -18,16 +19,19 @@ import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.block.entity.BrewingStandBlockEntity;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.options.KeyBinding;
+import net.minecraft.client.util.InputUtil;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
+import org.lwjgl.glfw.GLFW;
 
 public class KiwiClient implements ModInitializer {
 
     public static final String MOD_ID = "kiwiclient";
-    public static String name = "KiwiClient", version = "Ari1.10.24";
+    public static String name = "KiwiClient", version = "Ari1.10.25";
     private MinecraftClient mc;
 
     public static ModuleManager moduleManager;
@@ -38,6 +42,9 @@ public class KiwiClient implements ModInitializer {
     public static Identifier POTION_BOTTLES = new Identifier("kiwiclient:textures/brewing_stand.png");
     public static Identifier CAPE = new Identifier("kiwiclient:textures/cape.png");
     public static Identifier EARS = new Identifier("kiwiclient:textures/ears.png");
+
+    public static KeyBinding zoomKey = new KeyBinding("kiwiclient.zoom", InputUtil.Type.MOUSE,
+                                                     GLFW.GLFW_MOUSE_BUTTON_5, "KiwiClient");
 
     @Override
     public void onInitialize() {
@@ -82,5 +89,7 @@ public class KiwiClient implements ModInitializer {
         FabricLoader.getInstance().getModContainer("kiwiclient").ifPresent(modContainer -> {
             ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("kiwiclient:vanillatweaks"), "resourcepacks/vanillatweaks", modContainer, true);
         });
+
+        KeyBindingHelper.registerKeyBinding(zoomKey);
     }
 }
