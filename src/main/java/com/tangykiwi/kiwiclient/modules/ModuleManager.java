@@ -47,6 +47,8 @@ public class ModuleManager {
         moduleList.add(new ArmorSwap());
         moduleList.add(new LogoutSpots());
         moduleList.add(new Zoom());
+        moduleList.add(new NoFall());
+        moduleList.add(new NoPortal());
     }
 
     public ArrayList<Module> getEnabledMods() {
