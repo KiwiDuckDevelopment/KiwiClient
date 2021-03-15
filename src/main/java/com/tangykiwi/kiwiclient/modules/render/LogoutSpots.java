@@ -102,6 +102,7 @@ public class LogoutSpots extends Module {
 
     @Override
     public void onDisable() {
+        super.onDisable();
         players.clear();
         lastPlayerList.clear();
     }
