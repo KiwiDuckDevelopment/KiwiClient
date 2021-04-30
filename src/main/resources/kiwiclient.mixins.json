@@ -18,6 +18,7 @@
     "InGameHudMixin",
     "ItemEntityMixin",
     "ItemEntityRendererMixin",
+    "ItemStackMixin",
     "KeyboardMixin",
     "MinecraftClientMixin",
     "MouseMixin",

@@ -7,6 +7,7 @@ import com.tangykiwi.kiwiclient.event.MouseButtonEvent;
 import com.tangykiwi.kiwiclient.modules.client.ActiveMods;
 import com.tangykiwi.kiwiclient.modules.client.ClickGui;
 import com.tangykiwi.kiwiclient.modules.client.HUD;
+import com.tangykiwi.kiwiclient.modules.client.Tooltips;
 import com.tangykiwi.kiwiclient.modules.combat.Criticals;
 import com.tangykiwi.kiwiclient.modules.combat.TriggerBot;
 import com.tangykiwi.kiwiclient.modules.movement.*;
@@ -49,6 +50,7 @@ public class ModuleManager {
         moduleList.add(new Zoom());
         moduleList.add(new NoFall());
         moduleList.add(new NoPortal());
+        moduleList.add(new Tooltips());
     }
 
     public ArrayList<Module> getEnabledMods() {
