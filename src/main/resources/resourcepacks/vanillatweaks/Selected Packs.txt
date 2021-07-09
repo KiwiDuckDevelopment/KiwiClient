@@ -1,13 +1,11 @@
 Vanilla Tweaks Resource Pack
 Version: 1.17
 Packs:
-	DifferentStems
-	BushyLeaves
 	ClearerWater
-	VariatedBookshelves+ConnectedBookshelves
+	WavyLeaves
+	CircularSunandMoon
 	OreBorders
 	VisualInfestedStoneItems
-	FullAgeCropMarker
 	ClearBannerPatterns
 	HungerPreview
 	StickyPistonSides
@@ -23,6 +21,8 @@ Packs:
 	VisualHoney
 	VisualComposterStages
 	NoteblockBanners
+	VisualCauldronStages
+	VisualSaplingGrowth
 	NoVignette
 	3DPointedDripstone
 	3DLilyPads
@@ -35,7 +35,10 @@ Packs:
 	3DStonecutters
 	3DSugarcane
 	3DIronBars
+	3DBookshelves
+	3DChains
 	WitherHearts
 	PingColorIndicator
 	RainbowExperience
 	NumberedHotbar
+	DifferentStems
